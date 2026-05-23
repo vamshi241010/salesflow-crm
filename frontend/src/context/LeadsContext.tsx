@@ -53,7 +53,14 @@ export function LeadsProvider({
   }
 };
 useEffect(() => {
-  fetchLeads();
+
+  const token =
+    localStorage.getItem("token");
+
+  if (token) {
+    fetchLeads();
+  }
+
 }, []);
   // ADD LEAD
   const addLead = async (
