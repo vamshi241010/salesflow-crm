@@ -13,7 +13,6 @@ Candidate: Pisini Vamshi
 
 | Role  | Email               | Password   |
 |-------|---------------------|------------|
-| Admin | admin@salesflow.com | admin123   |
 | User  | demo@salesflow.com  | demo123    |
 
 > No signup required. Use the credentials above to log in directly.
