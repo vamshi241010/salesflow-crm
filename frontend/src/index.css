@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-bg: #1D2125;
+  --color-sidebar-bg: #161A1D;
+  --color-card-bg: #22272B;
+  --color-hover-bg: #282E33;
+  --color-border: #2C333A;
+  --color-text-primary: #DEE4EA;
+  --color-text-secondary: #8C9BAB;
+  --color-text-body: #B6C2CF;
+  --color-accent-blue: #579DFF;
+  --color-success: #4BCE97;
+  --color-warning: #F5CD47;
+  --color-danger: #F87168;
+  --color-purple: #A06EF5;
+  --color-btn-primary: #0C66E4;
+  --color-btn-primary-hover: #0052CC;
+  --color-contacted: #60C6D2;
+  --color-row-alt: #252B30;
+}
+
+* {
+  box-sizing: border-box;
+  transition: background-color 0.2s ease,
+              border-color 0.2s ease,
+              color 0.2s ease;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+/* Dark mode base */
+html.dark, html.dark body, html.dark #root {
+  background-color: #1D2125;
+  color: #B6C2CF;
+}
+
+/* Light mode base */
+html.light, html.light body, html.light #root {
+  background-color: #F0F2F7;
+  color: #475569;
+}
+
+/* Dark scrollbar */
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #1D2125;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #2C333A;
+  border-radius: 4px;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3D4750;
+}
+
+/* Light scrollbar */
+html.light ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html.light ::-webkit-scrollbar-track {
+  background: #F0F2F7;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Recharts tooltip fix */
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* Disable transition on recharts elements to prevent visual glitches */
+.recharts-surface,
+.recharts-bar-rectangle,
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  transition: none !important;
+}
