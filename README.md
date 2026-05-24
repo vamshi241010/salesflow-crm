@@ -6,8 +6,7 @@ Candidate: Pisini Vamshi
 
 ## Live Demo
 
-- Frontend: 
-https://salesflow-4eax8gw1a-vamshi241010s-projects.vercel.app/
+- Frontend: salesflow-crm-beta.vercel.app
 - Backend API: https://salesflow-backend-ld7k.onrender.com/
 
 ## Test Credentials
